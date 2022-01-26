@@ -116,9 +116,5 @@ function setup() {
       line (0, y, x,0);
     }
 
-
-
-
-
   }
   
