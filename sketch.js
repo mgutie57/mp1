@@ -5,8 +5,24 @@ function setup() {
     
   function draw() {
     
-    background(130, 130, 130);
+    //background(130, 130, 130);
+
+    background(80, 80, 80);
   
+  ////
+    // circle
+    strokeWeight(1);
+    stroke(70,70,70);
+    fill(70,70,70);
+    circle(windowWidth/2, windowHeight/2, 15);
+  
+    //circle 2
+    strokeWeight(1);
+    stroke(90,90,90);
+    fill(90,90,90);
+    circle(windowWidth/2, windowHeight/2, 10);
+
+
   ////
   
     var x = windowWidth;
@@ -19,7 +35,7 @@ function setup() {
     }
     //horizontal lines #2
     for (var y = windowHeight/2; y <= windowHeight; y = y + 40){
-      strokeWeight(2);
+      strokeWeight(1);
       stroke (210, 210, 210);
       line (x, y, 0, y);
     }
@@ -32,7 +48,6 @@ function setup() {
     
     ////
     
-    ////
   
     var y = windowHeight;
    //vertical lines #1
@@ -43,7 +58,7 @@ function setup() {
   }
   //vertical lines #2
   for (var x = windowWidth/2; x <= windowWidth; x = x + 40){
-    strokeWeight(2);
+    strokeWeight(1);
     stroke (170, 170, 170);
     line (x, 0, x, y);
   }
@@ -70,27 +85,27 @@ function setup() {
     }
     //diagonal left #2
     for (var x = 0; x <= windowWidth; x = x + 50){
-      strokeWeight(2);
+      strokeWeight(1);
       stroke (160, 160, 160);
       line (0, 0, x, y);
     }
     
     //diagonal left #3
     for (var x = 0; x <= windowWidth; x = x + 60){
-      strokeWeight(2);
+      strokeWeight(1);
       stroke (180, 180, 180);
       line (0, 0, x, y);
     }
     var x = windowWidth;
     //diagonal right #1
     for (var y = 0; y <= windowHeight; y = y + 40){
-      strokeWeight(2);
+      strokeWeight(1);
       stroke (200, 200, 200);
       line (0, y, x, 0);
     }
     //diagonal right #2
     for (var y = 0; y <= windowHeight; y = y + 50){
-      strokeWeight(2);
+      strokeWeight(1);
       stroke (160, 180, 250);
       line (0, y, x, 0);
     }
@@ -100,5 +115,10 @@ function setup() {
       stroke (220, 220, 220);
       line (0, y, x,0);
     }
+
+
+
+
+
   }
   
